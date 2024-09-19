@@ -14,7 +14,8 @@ This is a Django-based blog application that allows users to create and manage b
   - Add, update, and delete comments on blog posts.
 - **Search Functionality**: Search posts by title or content.
 - **Tag-based Filtering**: View posts by tags.
-  
+##Home
+![Home](django_blog/django_blog/images/2024-09-19 at 16.54.13_21e65de6.jpg)
 ## Technologies Used
 
 - **Django**: The web framework.
