@@ -19,6 +19,26 @@ This is a Django-based blog application that allows users to create and manage b
 
 ![Home](django_blog/django_blog/images/2024-09-19%20at%2016.54.13_21e65de6.jpg)
 
+## Login
+
+![Login](django_blog/django_blog/images/Image%2024-09-19%at%16.56.16_70199948.jpg)
+
+## Register
+
+![Register](django_blog/django_blog/images/Image%2024-09-19%at16.56.40_5098c832.jpg)
+
+## BlogPosts
+
+![BlogPosts](django_blog/django_blog/images/Image%2024-09-19%at%16.58.07_84a03070.jpg)
+
+## EditComment
+
+![EditComment](django_blog/django_blog/images/Image%2024-09-19%at%16.58.29_68d3a295.jpg)
+
+## DeleteComment
+
+![DeleteComment](django_blog/django_blog/images/Image%2024-09-19%at%16.58.48_ff147d58.jpg)
+
 ## Technologies Used
 
 - **Django**: The web framework.
