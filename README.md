@@ -43,7 +43,7 @@ This is a Django-based blog application that allows users to create and manage b
 ## Technologies Used
 
 - **Django**: The web framework.
-- **SQLite**: The default database used.
+- **PostgeSQL**: The default database used.
 - **Django Class-Based Views (CBV)**: Utilized for efficient CRUD operations.
 - **Django Templates**: For rendering HTML pages.
 
