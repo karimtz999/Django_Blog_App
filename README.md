@@ -15,7 +15,7 @@ This is a Django-based blog application that allows users to create and manage b
 - **Search Functionality**: Search posts by title or content.
 - **Tag-based Filtering**: View posts by tags.
 
-##Home
+## Home
 
 ![Home](django_blog/django_blog/images/2024-09-19%20at%2016.54.13_21e65de6.jpg)
 
