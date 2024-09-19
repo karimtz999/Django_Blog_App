@@ -1,0 +1,15 @@
+<!-- blog/templates/blog/post_list_by_tag.html -->
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <h2>Posts tagged with "{{ view.kwargs.tag_slug }}"</h2>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
+            </li>
+        {% empty %}
+            <li>No posts found for this tag.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

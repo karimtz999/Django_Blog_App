@@ -1,0 +1,27 @@
+<!-- blog/templates/blog/post_detail.html -->
+
+<h3>Comments</h3>
+<div class="comments-section">
+    {% for comment in post.comments.all %}
+        <div class="comment">
+            <p><strong>{{ comment.author }}</strong> ({{ comment.created_at|date:"F j, Y, g:i a" }}): {{ comment.content }}</p>
+            {% if request.user == comment.author %}
+                <a href="{% url 'comment_update' comment.pk %}" class="btn btn-sm btn-warning">Edit</a>
+                <a href="{% url 'comment_delete' comment.pk %}" class="btn btn-sm btn-danger">Delete</a>
+            {% endif %}
+        </div>
+    {% empty %}
+        <p>No comments yet.</p>
+    {% endfor %}
+</div>
+
+{% if user.is_authenticated %}
+    <h4>Leave a comment:</h4>
+    <form method="POST" action="{% url 'add_comment' post.pk %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Post Comment</button>
+    </form>
+{% else %}
+    <p><a href="{% url 'login' %}">Log in</a> to leave a comment.</p>
+{% endif %}
